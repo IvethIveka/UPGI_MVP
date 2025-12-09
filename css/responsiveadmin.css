@@ -34,10 +34,10 @@
 /* Móviles */
 @media (max-width: 768px) {
 
-  /* Sidebar colapsada con íconos centrados */
+  /* Sidebar colapsa a iconos o se oculta */
   .sidebar {
     position: fixed;
-    width: 70px; /* más ancho para evitar que se vea apeñuscado */
+    width: 70px; /* corregido: más ancho para evitar que se vea apeñuscado */
     padding-top: 0.5rem;
     overflow-x: hidden;
     transition: width 0.3s ease;
@@ -63,14 +63,14 @@
 
   /* Content se ajusta al sidebar colapsado */
   .content {
-    margin-left: 70px;
+    margin-left: 70px; /* corregido: ajustado al nuevo ancho de sidebar */
     padding: 10px;
   }
 
   /* Topbar elementos centrados y adaptados */
   .topbar {
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* corregido: centrado en móviles */
     text-align: center;
     gap: 10px;
   }
