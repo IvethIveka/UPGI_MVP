@@ -24,6 +24,21 @@
     margin-bottom: 20px;
 }
 
+
 /* ===============================
    RESPONSIVE (Tablets y Móviles)
    =============================== */
+@media (max-width: 768px) {
+    /* Mostrar solo la primera imagen y ocultar las otras */
+    .image-section img {
+        display: none;
+    }
+
+    .image-section img:first-child {
+        display: block;
+        width: 80%; /* ajusta según el espacio disponible */
+        margin: 0 auto;
+        height: auto;
+    }
+}
+
