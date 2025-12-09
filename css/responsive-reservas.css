@@ -1,0 +1,78 @@
+/* ===============================
+   GENERAL (Desktop)
+   =============================== */
+
+/* Mantener estilos de desktop si ya están en línea */
+.reservation-form,
+.details-section {
+    width: 100%;
+}
+
+/* Leyenda de estado */
+.availability-status {
+    text-align: right;
+}
+
+/* ===============================
+   RESPONSIVE (Tablets y Móviles)
+   =============================== */
+@media (max-width: 768px) {
+
+    /* Formulario de reservas: ancho completo */
+    .reservation-form {
+        padding: 20px;
+    }
+
+    /* Columnas del formulario apiladas verticalmente */
+    .row > .col-md-6 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Botones centrados y tamaño adecuado */
+    .btn-confirm, .btn-cancel {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    /* Detalles de la reserva: apilar verticalmente */
+    .reservation-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .details-left, .details-right {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .total-price {
+        font-size: 1.2rem;
+    }
+
+    /* Tabla o lista de horarios (si se implementa más adelante) scroll horizontal */
+    .horarios-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .status-available, .status-unavailable {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+
+    /* Footer: columnas apiladas */
+    .new-footer .row {
+        flex-direction: column;
+    }
+
+    .new-footer-left, .new-footer-middle, .new-footer-right {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+}
