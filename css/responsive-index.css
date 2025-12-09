@@ -1,85 +1,129 @@
-/* ==============================
-   Responsive Index - Móviles y Tablets
-   ============================== */
+/* ============================= */
+/* Responsividad Index Principal */
+/* ============================= */
 
-/* Reset algunos paddings y márgenes en pantallas pequeñas */
-body, .container-fluid, .container {
-    padding: 0 10px;
+@media (max-width: 1024px) {
+    /* Ajustes generales */
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .features-section {
+        padding: 40px 15px;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
 }
 
-/* Navbar */
-.navbar {
-    padding: 0.5rem 1rem;
-}
-
-.navbar .navbar-brand .logo {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-}
-
-.navbar .navbar-brand .brand-text .main {
-    font-size: 16px;
-}
-
-.navbar .navbar-brand .brand-text .sub {
-    font-size: 12px;
-}
-
-/* Secciones de imágenes */
-.image-section {
-    height: auto;  /* que se adapte */
-    padding: 15px 0;
-}
-
-.image-section img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Features Section */
-.features-section .feature-card {
-    padding: 20px;
-}
-
-.features-section .feature-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-}
-
-/* Footer */
-.footer, .new-footer {
-    text-align: center;
-    padding: 30px 10px;
-}
-
-.footer-left, .footer-middle, .footer-right,
-.new-footer-left, .new-footer-middle, .new-footer-right {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Botones */
-.btn, .btn-light-blue {
-    font-size: 0.9rem;
-    padding: 6px 12px;
-}
-
-/* Ajustes generales en pantallas menores a 768px */
+/* ============================= */
+/* Tablets y móviles grandes       */
+/* ============================= */
 @media (max-width: 768px) {
-    .navbar-collapse {
+
+    /* Navbar */
+    .navbar .navbar-nav {
         text-align: center;
     }
-    .navbar-nav .nav-item {
-        margin-bottom: 10px;
+
+    .navbar .nav-link {
+        padding: 8px 0;
     }
-    .features-section .row > .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
+
+    /* Header imágenes */
+    .container-fluid > .row.g-0 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+
     .image-section {
+        flex: 1 1 30%;
+        max-width: 30%;
+        margin: 0 5px;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Footer */
+    .footer, .new-footer {
+        text-align: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right,
+    .new-footer-left, .new-footer-middle, .new-footer-right {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    /* Features cards */
+    .features-section .row > div {
+        flex: 1 1 100%;
         margin-bottom: 15px;
     }
 }
+
+/* ============================= */
+/* Smartphones pequeños          */
+/* ============================= */
+@media (max-width: 480px) {
+
+    /* Navbar toggler */
+    .navbar .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    .navbar .nav-link {
+        font-size: 14px;
+    }
+
+    /* Header imágenes */
+    .image-section {
+        max-width: 32%;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Botones */
+    .btn-light-blue, .btn-outline-primary {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    /* Features cards */
+    .feature-card {
+        padding: 15px;
+    }
+
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    /* Footer textos */
+    .footer p, .new-footer p {
+        font-size: 0.8rem;
+    }
+
+    /* Ajuste del padding general */
+    body {
+        padding-top: 60px;
+    }
+}
+
