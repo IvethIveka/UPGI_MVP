@@ -1,1 +1,86 @@
+/* ==============================
+   Responsive Index - Móviles y Tablets
+   ============================== */
+
+/* Reset algunos paddings y márgenes en pantallas pequeñas */
+body, .container-fluid, .container {
+    padding: 0 10px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-brand .logo {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.navbar .navbar-brand .brand-text .main {
+    font-size: 16px;
+}
+
+.navbar .navbar-brand .brand-text .sub {
+    font-size: 12px;
+}
+
+/* Secciones de imágenes */
+.image-section {
+    height: auto;  /* que se adapte */
+    padding: 15px 0;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Features Section */
+.features-section .feature-card {
+    padding: 20px;
+}
+
+.features-section .feature-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
+
+/* Footer */
+.footer, .new-footer {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.footer-left, .footer-middle, .footer-right,
+.new-footer-left, .new-footer-middle, .new-footer-right {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Botones */
+.btn, .btn-light-blue {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+/* Ajustes generales en pantallas menores a 768px */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    .features-section .row > .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .image-section {
+        margin-bottom: 15px;
+    }
+}
 
