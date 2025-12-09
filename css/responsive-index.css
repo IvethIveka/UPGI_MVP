@@ -24,26 +24,24 @@
 
 /* =============================== RESPONSIVE (Tablets y Móviles) =============================== */
 @media (max-width: 768px) {
+    .image-section {
+        padding: 10px;
+        margin-bottom: 10px; /* reduce espacio debajo del banner */
+    }
+
     .image-section img {
-        display: none;
-    }
-
-    .image-section img:first-child {
-        display: block;
-        width: 90%;   /* ocupa casi todo el ancho */
-        margin: 0 auto;
+        width: 100%;        /* ocupa todo el ancho disponible */
+        max-width: 400px;   /* evita que se vea demasiado pequeño */
         height: auto;
+        margin: 0 auto;
+        display: block;
     }
 
-    .features-section .row {
-        flex-direction: column;
-        align-items: center;
+    .features-section {
+        padding-top: 20px; /* reduce espacio entre banner y texto */
     }
 
     .feature-card {
-        flex: 1 1 100%;
-        width: 100%;  /* mejor que 90% para evitar huecos */
-        margin-bottom: 20px;
+        margin-bottom: 15px; /* menos espacio entre tarjetas */
     }
 }
-
