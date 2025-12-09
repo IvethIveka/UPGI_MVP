@@ -1,0 +1,38 @@
+/* ===============================
+   RESPONSIVE ADMIN (Tablets y Móviles)
+   =============================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .sidebar { width: 200px; }
+  .content { margin-left: 200px; padding: 15px; }
+  .row.g-3.mb-4 > .col-md-3 { flex: 1 1 45%; margin-bottom: 15px; }
+  .horarios-table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    width: 70px; /* más ancho para que no se vea apeñuscado */
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    -webkit-overflow-scrolling: touch;
+  }
+  .sidebar a {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 0.8rem;
+  }
+  .sidebar a span, .brand-text { display: none; }
+  .logo { margin: 0 auto; }
+  .content { margin-left: 70px; padding: 10px; }
+  .topbar { flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+  .topbar input.form-control { width: 100%; }
+  .row.g-3.mb-4 > .col-md-3 { flex: 1 1 100%; margin-bottom: 10px; }
+  .horarios-table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .status-legend { text-align: center; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+}
