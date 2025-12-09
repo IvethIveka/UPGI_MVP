@@ -1,0 +1,92 @@
+/* ===============================
+   RESPONSIVE ADMIN (Tablets y Móviles)
+   =============================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  /* Sidebar más estrecha */
+  .sidebar {
+    width: 200px;
+  }
+
+  /* Content ajustado al sidebar */
+  .content {
+    margin-left: 200px;
+    padding: 15px;
+  }
+
+  /* Cards stats se apilan en dos columnas */
+  .row.g-3.mb-4 > .col-md-3 {
+    flex: 1 1 45%;
+    margin-bottom: 15px;
+  }
+
+  /* Tablas de horarios scroll horizontal */
+  .horarios-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+
+  /* Sidebar colapsa a iconos o se oculta */
+  .sidebar {
+    position: fixed;
+    width: 60px;
+    padding-top: 0.5rem;
+    overflow: hidden;
+  }
+
+  .sidebar a {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .sidebar a span,
+  .brand-text {
+    display: none;
+  }
+
+  /* Content se ajusta al sidebar colapsado */
+  .content {
+    margin-left: 60px;
+    padding: 10px;
+  }
+
+  /* Topbar elementos centrados y adaptados */
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .topbar input.form-control {
+    width: 100%;
+  }
+
+  /* Stats cards apiladas verticalmente */
+  .row.g-3.mb-4 > .col-md-3 {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Tablas con scroll horizontal */
+  .horarios-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Footer y otros elementos adaptativos */
+  .status-legend {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
