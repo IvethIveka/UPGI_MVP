@@ -37,11 +37,11 @@
   /* Sidebar colapsada con íconos centrados */
   .sidebar {
     position: fixed;
-    width: 70px; /* un poco más ancho para que no se vea apretado */
+    width: 70px; /* más ancho para evitar que se vea apeñuscado */
     padding-top: 0.5rem;
     overflow-x: hidden;
     transition: width 0.3s ease;
-    -webkit-overflow-scrolling: touch; /* scroll suave en móviles */
+    -webkit-overflow-scrolling: touch;
   }
 
   .sidebar a {
@@ -54,7 +54,7 @@
 
   .sidebar a span,
   .brand-text {
-    display: none; /* oculta textos en sidebar colapsada */
+    display: none;
   }
 
   .logo {
@@ -63,4 +63,42 @@
 
   /* Content se ajusta al sidebar colapsado */
   .content {
-    margin-left
+    margin-left: 70px;
+    padding: 10px;
+  }
+
+  /* Topbar elementos centrados y adaptados */
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .topbar input.form-control {
+    width: 100%;
+  }
+
+  /* Stats cards apiladas verticalmente */
+  .row.g-3.mb-4 > .col-md-3 {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Tablas con scroll horizontal */
+  .horarios-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Footer y otros elementos adaptativos */
+  .status-legend {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
