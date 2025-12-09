@@ -24,27 +24,26 @@
 
 /* =============================== RESPONSIVE (Tablets y Móviles) =============================== */
 @media (max-width: 768px) {
-    /* Mostrar solo la primera imagen y ocultar las otras */
     .image-section img {
         display: none;
     }
 
     .image-section img:first-child {
         display: block;
-        width: 80%; /* ajusta según el espacio disponible */
+        width: 90%;   /* ocupa casi todo el ancho */
         margin: 0 auto;
         height: auto;
     }
 
-  .features-section .row {
-    flex-direction: column;
-    align-items: center;
+    .features-section .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        flex: 1 1 100%;
+        width: 100%;  /* mejor que 90% para evitar huecos */
+        margin-bottom: 20px;
+    }
 }
 
-.feature-card {
-    flex: 1 1 100%;
-    width: 90%;
-    margin-bottom: 20px;
-}
-  
-}
